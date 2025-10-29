@@ -1,10 +1,11 @@
 [project]
-name = "cancer-predicition-cgb47"
+name = "cancer-prediction-cgb47"
 version = "0.1.0"
-description = "A bsaic cancer prediction model"
+description = "A basic cancer prediction model"
 authors = [{name = "Camilla Giulia Billari"}]
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 dependencies = [
+    "click>=8.1.8",
     "ipykernel>=6.29.5",
     "matplotlib>=3.7.5",
     "numpy>=1.24.4",
@@ -18,3 +19,13 @@ dev = [
     "flake8>=5.0.4",
     "isort>=5.13.2",
 ]
+
+[project.scripts]
+cancer-prediction = "cancer_prediction_cgb47.scripts.app:cli"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
