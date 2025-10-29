@@ -147,3 +147,6 @@ Testing/
 
 # Pylance
 .ipynb_checkpoints/
+
+
+testvenv/
