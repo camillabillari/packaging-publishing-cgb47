@@ -26,6 +26,18 @@ class CancerModel:
     def __str__(self) -> str:
         return 'CancerModel'
 
+    def new_function(self, arg1 : int, arg2 : int) -> int:
+        """Multiply two integers together
+
+        Args:
+            arg1 (int): integer one
+            arg2 (int): integer two
+
+        Returns:
+            int: product of two integers
+        """
+        return arg1 * arg2
+
 
     def fit(self, X : np.ndarray | pd.DataFrame, y : np.ndarray | pd.DataFrame) -> None:
         """Fit the model to the given data.
