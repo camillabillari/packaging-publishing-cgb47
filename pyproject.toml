@@ -1,6 +1,6 @@
 [project]
 name = "cancer-prediction-cgb47"
-version = "0.1.0"
+version = "0.2.0"
 description = "A basic cancer prediction model"
 authors = [{name = "Camilla Giulia Billari"}]
 requires-python = ">=3.11"
