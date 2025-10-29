@@ -1,6 +1,6 @@
 import unittest
-from cancer_prediction_cgb47.cancer_model import CancerModel
 
+from cancer_prediction_cgb47.cancer_model import CancerModel
 
 
 class TestCancerModel(unittest.TestCase):
@@ -24,5 +24,3 @@ class TestCancerModel(unittest.TestCase):
         diagnosis = "Benign"
         target = model.diagnosis_to_target(diagnosis)
         self.assertEqual(1, target)
-
-        
